@@ -1,2 +1,2 @@
 #!/bin/bash
-/path/to/symlink
+ln -s /bin/ls _ls_
