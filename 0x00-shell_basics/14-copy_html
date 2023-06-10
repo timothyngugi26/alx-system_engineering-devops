@@ -1,2 +1,2 @@
 #!/bin/bash
-/path/to/source/directory
+cp *.html ../
