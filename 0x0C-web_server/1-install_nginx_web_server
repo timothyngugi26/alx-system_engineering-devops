@@ -3,12 +3,14 @@
 
 apt-get update
 apt-get install -y nginx
-echo "#!/usr/bin/env bash
 # Installs Nginx
 
 sudo apt-get update
 sudo apt-get install -y nginx
 sudo ufw "nginx HTTP"
-echo "Hello World" > /var/www/html/index.html
+echo "Hello World" |sudo tee /var/www/html/index.html
 service nginx start#!/usr/bin/env bash
 # Installs Nginx
+ sudo nginx -t
+
+ sudo service nginx reload
